@@ -7,6 +7,16 @@
 
     <link class="icon64" rel="icon" href="Images/sponsers/sponser-7.png" />
 
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Appie</title>
 
     <!-- Font type -->
@@ -24,20 +34,20 @@
       <a href="#"> <img class="logo" alt="appie" src="Images/logo.png" /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li>
+          <li class="arrow-nav">
             <a class="main-nav-link" href="#">Home</a>
-            <img class="icon" src="Images/icons/down-arrow.png" />
+            <ion-icon class="icon" name="chevron-down"></ion-icon>
           </li>
           <li>
             <a class="main-nav-link" href="#services">Service</a>
           </li>
-          <li>
+          <li class="arrow-nav">
             <a class="main-nav-link" href="#pages">Pages</a>
-            <img class="icon" src="Images/icons/down-arrow.png" />
+            <ion-icon class="icon" name="chevron-down"></ion-icon>
           </li>
-          <li>
+          <li class="arrow-nav">
             <a class="main-nav-link" href="#news">News</a>
-            <img class="icon" src="Images/icons/down-arrow.png" />
+            <ion-icon class="icon" name="chevron-down"></ion-icon>
           </li>
           <li>
             <a class="main-nav-link" href="#contact">Contact</a>
@@ -50,43 +60,42 @@
     </header>
     <main>
       <section class="home-section">
-        <div class="info-home">
-          <h1 class="header-home">
-            Ready to launch your app in one, <strong>Application</strong>
-          </h1>
-          <p class="text-home">Find the best application in the apple.</p>
-          <div class="info-btn">
-            <img class="icon-home" src="Images/icons/icons8-mail-50.png" />
-            <input
-              type="email"
-              name=""
-              id="email"
-              placeholder="info@apple.com"
-            />
-            <button class="arrow-colored">
-              <img
-                class="icon-home"
-                src="Images/icons/icons8-right-arrow-32.png"
-              />
-            </button>
-          </div>
-          <div class="tail-home">
-            <div class="imgs-tail">
-              <img src="Images/people/customer-4.jpg" />
-              <img src="Images/people/customer-1.jpg" />
-              <img src="Images/people/customer-2.jpg" />
-              <img src="Images/people/customer-5.jpg" />
+        <div class="home">
+          <div class="info-home">
+            <h1 class="header-home">
+              Ready to launch your app in one, <strong>Application</strong>
+            </h1>
+            <p class="text-home">Find the best application in the apple.</p>
+            <div class="info-btn">
+              <div class="mail-info">
+                <img class="mail-icon" src="Images/icons/icons8-mail-50.png" />
+                <input
+                  type="email"
+                  name=""
+                  id="email"
+                  placeholder="info@apple.com"
+                />
+              </div>
+              <ion-icon class="icon-home" name="arrow-forward"></ion-icon>
             </div>
-            <div class="texts">
-              <h2>30K</h2>
-              <p>Feedback</p>
+            <div class="tail-home">
+              <div class="imgs-tail">
+                <img src="Images/people/customer-4.jpg" />
+                <img src="Images/people/customer-1.jpg" />
+                <img src="Images/people/customer-2.jpg" />
+                <img src="Images/people/customer-5.jpg" />
+              </div>
+              <div class="texts">
+                <h2>30K</h2>
+                <p>Feedback</p>
+              </div>
             </div>
           </div>
+          <img class="img-home" src="Images/hero.png" />
         </div>
-        <img class="img-home" src="Images/hero.png" />
       </section>
 
-      <section class="service-sec">
+      <section class="service-sec" id="services">
         <h1 class="primary-header">How does it work</h1>
         <div class="description">
           <p class="primary-text">
@@ -94,148 +103,179 @@
           </p>
           <button class="btn-service">
             <p>View all Features</p>
-            <img class="icon" src="Images/icons/right-arrows.png" />
+            <ion-icon class="icon" name="arrow-forward"></ion-icon>
           </button>
         </div>
         <div class="features">
-          <div class="feature">
-            <img
-              class="icon-service"
-              src="Images/icons/icons8-electric-67.png"
-            />
+          <div class="feature feature-1">
+            <ion-icon
+              class="icon-service icon-celestial"
+              name="flash"
+            ></ion-icon>
             <h2 class="secondary-header">Fast and intuitive</h2>
             <p class="secondary-text">
               Oxford posh bevvy give us a bell gutted mate spend a penny quaint
               cockup plastered
             </p>
-            <button class="more-inf">
+            <a class="more-inf">
               <p class="text-btn">Read more</p>
-              <img class="icon" src="Images/icons/right-arrows.png" />
-            </button>
+              <ion-icon class="icon" name="arrow-forward"></ion-icon>
+            </a>
           </div>
 
-          <div class="feature">
-            <img
-              class="icon-service"
-              src="Images/icons/icons8-home-page-64.png"
-            />
+          <div class="feature feature-2">
+            <ion-icon class="icon-service icon-red" name="home"></ion-icon>
             <h2 class="secondary-header">Fast and intuitive</h2>
             <p class="secondary-text">
               Oxford posh bevvy give us a bell gutted mate spend a penny quaint
               cockup plastered
             </p>
-            <button class="more-inf">
+            <a class="more-inf">
               <p class="text-btn">Read more</p>
-              <img class="icon" src="Images/icons/right-arrows.png" />
-            </button>
+              <ion-icon class="icon" name="arrow-forward"></ion-icon>
+            </a>
           </div>
 
-          <div class="feature">
-            <img
-              class="icon-service"
-              src="Images/icons/icons8-electric-67.png"
-            />
+          <div class="feature feature-3">
+            <ion-icon class="icon-service icon-blue" name="link"></ion-icon>
             <h2 class="secondary-header">Fast and intuitive</h2>
             <p class="secondary-text">
               Oxford posh bevvy give us a bell gutted mate spend a penny quaint
               cockup plastered
             </p>
-            <button class="more-inf">
+            <a class="more-inf">
               <p class="text-btn">Read more</p>
-              <img class="icon" src="Images/icons/right-arrows.png" />
-            </button>
+              <ion-icon class="icon" name="arrow-forward"></ion-icon>
+            </a>
           </div>
 
-          <div class="feature">
-            <img
-              class="icon-service"
-              src="Images/icons/icons8-doorbell-24.png"
-            />
+          <div class="feature feature-4">
+            <ion-icon
+              class="icon-service icon-orange"
+              name="notifications"
+            ></ion-icon>
             <h2 class="secondary-header">Fast and intuitive</h2>
             <p class="secondary-text">
               Oxford posh bevvy give us a bell gutted mate spend a penny quaint
               cockup plastered
             </p>
-            <button class="more-inf">
+            <a class="more-inf">
               <p class="text-btn">Read more</p>
-              <img class="icon" src="Images/icons/right-arrows.png" />
-            </button>
+              <ion-icon class="icon" name="arrow-forward"></ion-icon>
+            </a>
           </div>
 
-          <div class="feature">
-            <img
-              class="icon-service"
-              src="Images/icons/icons8-settings-48.png"
-            />
+          <div class="feature feature-5">
+            <ion-icon class="icon-service blue-icon" name="settings"></ion-icon>
             <h2 class="secondary-header">Fast and intuitive</h2>
             <p class="secondary-text">
               Oxford posh bevvy give us a bell gutted mate spend a penny quaint
               cockup plastered
             </p>
-            <button class="more-inf">
+            <a class="more-inf">
               <p class="text-btn">Read more</p>
-              <img class="icon" src="Images/icons/right-arrows.png" />
-            </button>
+              <ion-icon class="icon" name="arrow-forward"></ion-icon>
+            </a>
           </div>
 
-          <div class="feature">
-            <img
-              class="icon-service"
-              src="Images/icons/icons8-electric-67.png"
-            />
+          <div class="feature feature-6">
+            <ion-icon
+              class="icon-service icon-green"
+              name="lock-closed"
+            ></ion-icon>
             <h2 class="secondary-header">Fast and intuitive</h2>
             <p class="secondary-text">
               Oxford posh bevvy give us a bell gutted mate spend a penny quaint
               cockup plastered
             </p>
-            <button class="more-inf">
+            <a class="more-inf">
               <p class="text-btn">Read more</p>
-              <img class="icon" src="Images/icons/right-arrows.png" />
-            </button>
-          </div>
-
-          <div class="feature">
-            <img class="icon-service" src="Images/icons/icons8-lock-30.png" />
-            <h2 class="secondary-header">Fast and intuitive</h2>
-            <p class="secondary-text">
-              Oxford posh bevvy give us a bell gutted mate spend a penny quaint
-              cockup plastered
-            </p>
-            <button class="more-inf">
-              <p class="text-btn">Read more</p>
-              <img class="icon" src="Images/icons/right-arrows.png" />
-            </button>
+              <ion-icon class="icon" name="arrow-forward"></ion-icon>
+            </a>
           </div>
         </div>
+      </section>
 
-        <div class="second-service">
+      <section class="second-service">
+        <div class="about">
           <img class="img-sec-service" src="Images/about-thumb.png" />
           <div class="description-sec-service">
             <p class="title">Marketing</p>
-            <h1>Make a lasting impression with appie</h1>
-            <p>
+            <h1 class="description-header">
+              Make a lasting impression with appie.
+            </h1>
+            <p class="description-text">
               Jolly good quaint james bond victoria sponge happy days cras arse
               over blatant
             </p>
             <div class="choosen">
-              <div class="first-choose">
-                <img
-                  class="correct-img"
-                  src="Images/icons/icons8-done-24.png"
-                />
-                <h2>Carefully designed</h2>
-                <p>Mucker plastered bugger all mate morish are.</p>
+              <div class="choose">
+                <div>
+                  <ion-icon class="correct-img" name="checkmark"></ion-icon>
+                </div>
+                <div>
+                  <h2 class="h2">Carefully designed</h2>
+                  <p class="para">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
               </div>
-              <div class="second-choose">
-                <img
-                  class="correct-img"
-                  src="Images/icons/icons8-done-24.png"
-                />
-                <h2>Choose a App</h2>
-                <p>Mucker plastered bugger all mate morish are.</p>
+              <div class="choose">
+                <div>
+                  <ion-icon class="correct-img" name="checkmark"></ion-icon>
+                </div>
+                <div>
+                  <h2 class="h2">Choose a App</h2>
+                  <p class="para">
+                    Mucker plastered bugger all mate morish are.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="pages-section" id="pages">
+        <div class="basic">
+          <h1 class="page-header">
+            Wherever you need <br />
+            us the most
+          </h1>
+          <p class="text-page">
+            The full monty spiffing good time no biggie cack grub fantastic.
+          </p>
+        </div>
+        <div class="description-page">
+          <div class="pages">
+            <div class="page">
+              <div class="circle-icon circle-icon-red"></div>
+              <div class="text-box">
+                <h2 class="page-header">Well Integrated</h2>
+                <p class="text-page">
+                  The bee's knees chancer car boot absolutely
+                </p>
+              </div>
+            </div>
+            <div class="page">
+              <div class="circle-icon circle-icon-blue"></div>
+              <div class="text-box">
+                <h2 class="page-header">Well Integrated</h2>
+                <p class="text-page">
+                  The bee's knees chancer car boot absolutely
+                </p>
+              </div>
+            </div>
+            <div class="page">
+              <div class="circle-icon circle-icon-green"></div>
+              <div class="text-box">
+                <h2 class="page-header">Well Integrated</h2>
+                <p class="text-page">
+                  The bee's knees chancer car boot absolutely
+                </p>
+              </div>
+            </div>
+          </div>
+          <img class="img-page" src="Images/features-thumb-2.png" />
         </div>
       </section>
     </main>
