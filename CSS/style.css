@@ -172,8 +172,8 @@ input::placeholder {
 }
 
 .imgs-tail img {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   margin-left: -1rem;
   border: 3px solid #fff;
@@ -875,10 +875,13 @@ input::placeholder {
 }
 
 .cards {
-  display: flex;
+  /* display: flex;
   justify-content: right;
   align-items: flex-start;
-  gap: 2.4rem;
+  gap: 2.8rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
 }
 
 .card {
@@ -888,7 +891,28 @@ input::placeholder {
 }
 
 .fav-card {
+  border-top: 3px solid #ff3e66;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.fav-card::after {
+  content: "Most Popular";
+  position: absolute;
+  top: 5%;
+  right: 0;
+  background-color: #2a6df5;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.6rem;
+  border-top-left-radius: 9.6rem;
+  border-bottom-left-radius: 9.6rem;
+}
+
+.fav-card:hover,
+.fav-card:active {
+  transform: scale(1.05);
 }
 
 h3 {
@@ -982,4 +1006,135 @@ h3 {
 .green-icon {
   color: #33c956;
   background-color: #e8f5ee;
+}
+
+/*****************/
+/* Quote Section */
+/*****************/
+
+.quote-section {
+  width: 77.5%;
+  margin: 0 auto;
+  margin-bottom: 8.6rem;
+  margin-top: -8.6rem;
+  background-color: #2a83f5;
+  padding: 9.6rem 14.6rem;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.img-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1.2rem;
+}
+
+.quote-img {
+  width: 12.4rem;
+  height: 12.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.star-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: #f5b44e;
+  margin-bottom: 0.8rem;
+}
+
+.img-quote p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.text-quote p {
+  font-size: 1.9rem;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 2.4rem;
+  margin-top: 1.2rem;
+}
+
+.define-quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote-name h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.quote-name p {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+.icons-quote {
+  gap: 1rem;
+  margin-right: -3.2rem;
+}
+
+.icon-quote {
+  color: #fff;
+  border: 1px solid #cccccc54;
+}
+
+/********************/
+/* sponsors Section */
+/********************/
+
+.sponsor-section,
+.sec-sponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.sec-sponsor h1 {
+  font-size: 4.2rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #181b3b;
+  margin-bottom: 1.2rem;
+}
+
+.sec-sponsor p {
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 4.8rem;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1.2rem;
+  row-gap: 2.4rem;
+}
+
+.sponsor {
+  width: 90%;
+  height: 95%;
+  padding: 3.2rem 3.2rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.8rem;
+}
+
+.sponsor:hover,
+.sponsor:active {
+  transform: scale(1.05);
 }
